@@ -37,7 +37,7 @@ func (e ErrAction) Error() string {
 		if e.err != nil {
 			return fmt.Sprintf("widget \"%s\" failed to handle action \"%s\": %v", e.viewname, e.action, e.err)
 		}
-		return fmt.Sprintf("widget \"%s\" does not handle action \"%s\": %v", e.viewname, e.action)
+		return fmt.Sprintf("widget \"%s\" does not handle action \"%s\"", e.viewname, e.action)
 	}
 
 	return e.err.Error()

@@ -147,7 +147,6 @@ func (w *ScrollWidget) HandleAction(action string) error {
 	default:
 		return UnknownAction()
 	}
-	return nil
 }
 
 // PreviousLine selects the previous line.
